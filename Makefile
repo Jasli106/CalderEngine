@@ -1,0 +1,2 @@
+main:
+	clang++ ./game_engine/*.cpp  -std=c++17 ./box2d/src/collision/*.cpp ./box2d/src/common/*.cpp ./box2d/src/dynamics/*.cpp ./box2d/src/rope/*.cpp -I./ -I./game_engine/ -I./SDL2/ -I./SDL2_image/ -I./SDL2_mixer/ -I./SDL2_ttf/ -I./lua/ -I./LuaBridge/ -I./box2d -I./box2d/src -lSDL2 -lSDL2main -lSDL2_image -lSDL2_mixer -lSDL2_ttf -llua5.4 -O3 -o game_engine_linux
